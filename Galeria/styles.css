@@ -143,6 +143,35 @@ nav a:hover {
   opacity: 1 !important;
   transform: none !important;
 }
+/* --- FIX COMPLETO PARA LIGHTBOX OSCURO --- */
+
+/* Aclarar fondo del overlay */
+.lb-overlay,
+.lightboxOverlay {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Eliminar filtros y opacidad de la imagen ampliada */
+.lb-image {
+  filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.4) !important;
+}
+
+/* Asegurar que no se hereden estilos oscuros */
+.lb-outerContainer,
+.lb-container {
+  background: transparent !important;
+}
+
+/* Título más visible */
+.lb-caption {
+  color: #00ff88 !important;
+  font-weight: 600;
+  text-shadow: 0 0 10px #00ff88;
+}
+
 
 .galeria__grid img {
   transition: transform 0.3s, box-shadow 0.3s;

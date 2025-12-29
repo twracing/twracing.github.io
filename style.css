@@ -325,6 +325,120 @@ footer {
   z-index: 1000;
 }
 
+/* ============================
+   RESPONSIVE PARA MÓVIL
+   ============================ */
+@media (max-width: 768px) {
+
+    /* GENERAL */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+    .header {
+        height: auto;
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .logo-img {
+        height: 60px;
+        margin-right: 8px;
+    }
+
+    nav {
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li:last-child a {
+        padding-right: 0;
+    }
+
+    /* HERO */
+    .hero {
+        height: 45vh;
+        margin-top: 140px; /* header más alto en móvil */
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* MATCH SECTION */
+    .match-section {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .match-card {
+        width: 100%;
+        padding: 2rem;
+        max-width: none;
+    }
+
+    .video-card {
+        width: 100%;
+        padding: 1.5rem;
+        max-width: none;
+    }
+
+    .video-wrapper iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .video-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.3rem;
+    }
+
+    /* MODAL */
+    .modal__contenido {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .modal__lista li {
+        font-size: 0.9rem;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        padding: 1.5rem;
+    }
+
+    .rrss-icons {
+        gap: 1.5rem;
+    }
+
+    .rrss-icons a {
+        font-size: 1.6rem;
+    }
+}
 
 .modal__contenido {
   background: #111;

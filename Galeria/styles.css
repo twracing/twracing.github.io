@@ -143,12 +143,15 @@ nav a:hover {
   opacity: 1 !important;
   transform: none !important;
 }
+
 .galeria__grid img {
-  filter: brightness(0.85);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .galeria__grid img:hover {
-  filter: brightness(1);
+  filter: brightness(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.6);
 }
 
 

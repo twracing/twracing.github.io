@@ -115,11 +115,13 @@ nav a:hover {
 .jugador__foto {
   width: 100%;
   height: 260px;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #0a0f0a; /* fondo igual al body */
   border-radius: 12px;
   margin-bottom: 1rem;
   box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
 }
+
 
 .jugador__info {
   margin-top: 0.5rem;

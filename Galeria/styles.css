@@ -104,6 +104,9 @@ nav a:hover {
   transition: 0.3s;
 }
 
+body.lb-open {
+  overflow: hidden;
+}
 
 .galeria__grid img:hover {
   transform: scale(1.05);
@@ -118,6 +121,47 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
+/* --- FIX COMPLETO PARA CENTRAR Y AJUSTAR LA IMAGEN DEL LIGHTBOX --- */
+
+/* Overlay que cubre todo por encima del header */
+.lightboxOverlay,
+.lb-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 99999 !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* Contenedor que centra vertical y horizontalmente */
+.lb-outerContainer {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+/* Imagen ajustada sin cortes */
+.lb-image {
+  max-width: 90vw !important;
+  max-height: 85vh !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.4) !important;
+  filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Bloquear scroll del body mientras está abierto */
+body.lb-disable-scrolling {
+  overflow: hidden !important;
+}
+
 
 .lightbox-img {
   max-width: 90%;

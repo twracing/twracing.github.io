@@ -87,6 +87,8 @@ nav a:hover {
   margin-top: 3rem;     /* ← espacio arriba */
   margin-bottom: 1.5rem; /* ← espacio abajo */
   text-shadow: 0 0 10px #00ff88;
+  margin-left: 2rem;
+
 }
 
 

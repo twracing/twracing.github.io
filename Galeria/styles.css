@@ -208,10 +208,16 @@ nav a:hover {
 /* GALERÍA VIDEOS */
 .galeria__videos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* ← SIEMPRE 3 POR FILA */
   gap: 2rem;
   padding: 2rem;
 }
+@media (max-width: 768px) {
+  .galeria__videos-grid {
+    grid-template-columns: 1fr; /* 1 por fila en móvil */
+  }
+}
+
 
 .galeria__videos-grid iframe,
 .galeria__video {

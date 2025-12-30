@@ -84,9 +84,11 @@ nav a:hover {
 /* GALERÍA IMÁGENES */
 .galeria__subtitulo {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;     /* ← espacio arriba */
+  margin-bottom: 1.5rem; /* ← espacio abajo */
   text-shadow: 0 0 10px #00ff88;
 }
+
 
 .galeria__grid {
   display: grid;
